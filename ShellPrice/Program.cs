@@ -17,7 +17,9 @@ namespace ShellPrice
             var body = @"{" + "\n" +
                 @" ""IQ_API"": {" + "\n" +
                 @" ""IQ_API_Request_Stock"": {" + "\n" +
-                @" ""IQ_Company_Number"": ""002""," + "\n" +
+                // Here update IQ_Company_Number as DXS
+                @" ""IQ_Company_Number"": ""DXS""," + "\n" +
+                // Here update IQ_Company_Number
                 @" ""IQ_Terminal_Number"": 205," + "\n" +
                 @" ""IQ_User_Number"": 205," + "\n" +
                 @" ""IQ_User_Password"": ""8CB2237D0679CA88DB6464EAC60DA96345513964"", " + "\n" +
@@ -38,7 +40,9 @@ namespace ShellPrice
             body = @"{" + "\n" +
                 @" ""IQ_API"": {" + "\n" +
                 @" ""IQ_API_Submit_Stock"": {" + "\n" +
-                @" ""IQ_Company_Number"": ""002""," + "\n" +
+                // Here update IQ_Company_Number as TRN
+                @" ""IQ_Company_Number"": ""TRN""," + "\n" +
+                // Here update IQ_Company_Number
                 @" ""IQ_Terminal_Number"": 205," + "\n" +
                 @" ""IQ_User_Number"": 205," + "\n" +
                 @" ""IQ_User_Password"": ""8CB2237D0679CA88DB6464EAC60DA96345513964""," + "\n" +
@@ -47,9 +51,9 @@ namespace ShellPrice
                 @" ""iq_root_json"": {" + "\n" +
                 @" ""iq_identification_info"": {" + "\n" +
                 @" ""company_store_id"": ""DEMO1""," + "\n" +
-                // Here update company_code as "TRN"
+                //In the submit company_code must be updated to A01,A02,A03,B01,B02,B03
                 @" ""company_code"": ""002""," + "\n" +
-                // Here update company code
+                //In the submit company_code must be updated to A01,A02,A03,B01,B02,B03
                 @" ""company_name"": ""Demo Trading 1""," + "\n" +
                 @" ""company_address1"": ""15 STREET ADRES""," + "\n" +
                 @" ""company_address2"": ""ROSSLYN NORTH WEST""," + "\n" +
