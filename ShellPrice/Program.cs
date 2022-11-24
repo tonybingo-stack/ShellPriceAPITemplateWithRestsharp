@@ -73,7 +73,7 @@ namespace ShellPrice
                 res.iq_root_json.stock_master[i].sell_prices[5].exclusive = 0;
             }
 
-            request = new RestRequest("IQRetailRestAPI/v1/IQ_API_Request_Stock_Attributes?callformat=JSON", Method.Post);
+            request = new RestRequest("IQRetailRestAPI/v1/IQ_API_Submit_Stock_Attributes?callformat=JSON", Method.Post);
             request.AddHeader("Authorization", "Basic OTk6QVBJVGVzdA==");
             request.AddHeader("Content-Type", "application/json");
             body = @"{" + "\n" +
